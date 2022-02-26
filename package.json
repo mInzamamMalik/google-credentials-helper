@@ -1,0 +1,19 @@
+{
+  "name": "google-credentials-helper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/main.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malikasinger1/google-credentials-helper.git"
+  },
+  "author": "M.Inzamam Malik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/malikasinger1/google-credentials-helper/issues"
+  },
+  "homepage": "https://github.com/malikasinger1/google-credentials-helper#readme"
+}
