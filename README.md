@@ -22,6 +22,10 @@ npm library so it will work anywhere without any change is codebase
 ## Installation:
 `npm i google-credentials-helper`
 
+or 
+
+`npm i https://github.com/malikasinger1/google-credentials-helper`
+
 ## Usage:
 
 ### Setting Environment Variables:
