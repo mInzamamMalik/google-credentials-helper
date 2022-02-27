@@ -1,4 +1,4 @@
-# google-credentials-helper
+# Google Credentials Helper
 nodejs library to help with GOOGLE_APPLICATION_CREDENTIALS on Heroku and clouds other then google
 
 
@@ -7,7 +7,7 @@ nodejs library to help with GOOGLE_APPLICATION_CREDENTIALS on Heroku and clouds 
 Initially I wrote this library for myself and later I decided to open it for others,
 when I tried to use google apis in my nodejs server there was no way to pass the credentials directly as we can so in rest pai calls 
 (it turned out there was a way before to pass config in client library initialization but later on it was pronounced deprecated)
-Google forced us to put the path of their `service account json` in environment variable insted of the the `service account json` itself.
+Google forced us to put the path of their `service_account.json` file in environment variable insted of the the `service account json` itself which I donot understand and lots of other people complaining about that.
 in local machine it worked fine I saved service account json in a folder and saved its path in env vars but when it came to deploy on heroku
 it was a real problem, because my github repo was public and I was not willing to add service account json in the repo even if it was private because you never know
 at that point I googled what other people doing for this problem, and I found [this article](https://devdojo.com/bryanborge/adding-google-cloud-credentials-to-heroku)
@@ -50,7 +50,7 @@ In heroku it should look like this:
 
 
 
-### ES6 usage
+### ES6 code
 ```
 import gcHelper from "google-credentials-helper"
 
@@ -58,7 +58,7 @@ gcHelper();
 
 ```
 
-### ES5 usage
+### ES5 code
 ```
 const gcHelper = require("google-credentials-helper")
 
@@ -66,6 +66,22 @@ gcHelper();
 
 ```
 
+# Example Project:
+
+to see this library in action, checkout this project:
+
+## [Dialogflow Integration with React App](https://github.com/malikasinger1/Dialogflow-integration-with-react-app)
+
+in this example project check server.mjs file on the root of the project to see how the library is imported and initialized, line# 4 and line# 7 respectively 
+
+
+# Feedback
+please feel free to contact me on malikasinger@gmail.com<br>
+or create an issue to improve this library<br>
+pull requests are always welcomed
+
+Thanks,<br>
+Malik.
 
 
 
