@@ -24,15 +24,33 @@ npm library so it will work anywhere without any change is codebase
 
 ## Usage:
 
-### Environment Variable
-In local machine You must have to have Environment variable like this:
-`GOOGLE_CREDENTIALS='{ "project_id": "abc-project-id", "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvg...9Z2bw4YKuO9uXM6PeAoD\n-----END PRIVATE KEY-----\n", "client_email": "dialogflow-client-service-acco@abc-project-id.iam.gserviceaccount.com" }'`
+### Setting Environment Variables:
+
+In local machine You must have to have Environment variable like this:<br><br>
+```
+export GOOGLE_APPLICATION_CREDENTIALS="google-credentials.json"
+
+export GOOGLE_CREDENTIALS='{
+  "type": "service_account",
+  "project_id": "abc-project-id",
+  "private_key_id": "6153365dad9d1...84b54867896b20a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvg...ERNeAoD\n-----END PRIVATE KEY-----\n",
+  "client_email": "dialogflow-client-service-acco@abc-project-id.iam.gserviceaccount.com",
+  "client_id": "11121892...183973207",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dialogflow-client-service-acco%40abc-project-id.iam.gserviceaccount.com"
+}'
+```
 
 In heroku it should look like this:
+![image](https://user-images.githubusercontent.com/14273842/155875395-218ef516-29c8-4ea9-ab02-88e5a8bf0fbb.png)
 
 
 
-### ES6
+
+### ES6 usage
 ```
 import gcHelper from "google-credentials-helper"
 
@@ -40,11 +58,14 @@ gcHelper();
 
 ```
 
-### ES5
+### ES5 usage
 ```
 const gcHelper = require("google-credentials-helper")
 
 gcHelper();
 
 ```
+
+
+
 
